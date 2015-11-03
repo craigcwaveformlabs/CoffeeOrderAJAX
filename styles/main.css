@@ -1,0 +1,31 @@
+body {
+    font-family: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul {
+  padding: 0px;
+}
+
+ ul li {
+   background: #FAE6DE;
+   list-style-type: none;
+   margin: 0 0 10 0;
+   padding: 10px;
+ }
+
+ul li .edit {
+  display: none;
+}
+
+ul li.edit .edit {
+  display: initial;
+}
+
+ul li.edit .noedit {
+  display: none;
+}

@@ -1,0 +1,54 @@
+<DOCTYPE HTML!>
+ <html lang="en">
+    <head>
+      <title>jQuery 007</title>
+      <meta charset="utf-5">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles/main.css">
+    </head>
+
+     <body>
+       <h1>jQuery Ajax Tutorial</h1>
+
+       <h2>Coffee Orders</h2>
+
+       <ul id="orders">
+
+      <script type="text/template" id="order-template">
+        <li data-id="{{id}}">
+          <p>
+            <strong>Name:</strong>
+            <span class="noedit name">{{name}}</span>
+            <input class="edit name"/>
+          </p>
+          <p>
+            <strong>Drink:</strong>
+            <span class="noedit drink">{{drink}}</span>
+            <input class="edit drink"/>
+          </p>
+          <button data-id='{{id}}' class='remove'>X</button>
+          <button class="editOrder noedit">Edit</button>
+          <button class="saveEdit edit">Save</button>
+          <button class="cancelEdit edit">Cancel</button>
+        </li>
+      </script>
+
+       </ul>
+
+       <h4>Add a Coffee Order</h4>
+       <p>name: <input type="text" id="name" value=""></p>
+       <p>drink: <input type="text" id="drink" value=""></p>
+       <button id="add-order">Add!</button>
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+    <!-- Import local Javascript-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Import local Moustache-->
+    <script type="text/javascript" src="mustache/mustache.js"></script>
+
+
+  </body>
+</html>
