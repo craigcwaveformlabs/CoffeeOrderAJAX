@@ -1,7 +1,65 @@
-body {
-    font-family: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    padding: 50px
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald Regular"), local("Oswald-Regular"), url(http://fonts.gstatic.com/s/oswald/v10/_P8jt3Y65hJ9c4AzRE0V1OvvDin1pK8aKteLpeZ5c0A.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+body {
+  padding: 50px;
+}
+
+
+h1 {
+  font-family: oswald;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 80px;
+}
+
+h2, h4, p {
+  font-family: oswald;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+}
+
+p {
+  letter-spacing: 1.4px;
+  font-size: 14px;
+}
+
+hr {
+  margin: 50px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.example {
+  border: 6px solid black;
+  font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  margin-bottom: 20px;
+}
+.example h2 {
+  text-align: center;
+  font-weight: normal;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 1em;
+}
+
+.example-page {
+  margin: 50px;
+}
+
+.inputOrder {
+  margin: 50px;
+}
+
 
 a {
   color: #00B7FF;
@@ -12,7 +70,7 @@ ul {
 }
 
  ul li {
-   background: #FAE6DE;
+   background: pink;
    list-style-type: none;
    margin: 0 0 10 0;
    padding: 10px;
